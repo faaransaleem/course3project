@@ -45,3 +45,6 @@ library("data.table")
 ##step5
 	clean <- dcast(grouped, subject + actname ~ variable, mean)
 
+## writing files
+write.table(clean, file = "./course3project.txt", row.name = FALSE)
+
